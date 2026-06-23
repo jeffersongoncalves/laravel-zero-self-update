@@ -1,3 +1,9 @@
+<div class="filament-hidden">
+
+![laravel-zero-self-update](https://raw.githubusercontent.com/jeffersongoncalves/laravel-zero-self-update/main/art/jeffersongoncalves-laravel-zero-self-update.png)
+
+</div>
+
 # laravel-zero-self-update
 
 Reusable self-update service and base command for [Laravel Zero](https://laravel-zero.com) CLIs that are distributed as a single-file PHAR via GitHub Releases.
