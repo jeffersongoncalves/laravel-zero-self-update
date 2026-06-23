@@ -1,0 +1,39 @@
+{
+    "name": "jeffersongoncalves/laravel-zero-self-update",
+    "description": "Reusable self-update service and base command for Laravel Zero CLIs distributed as a PHAR via GitHub Releases.",
+    "keywords": ["laravel-zero", "cli", "self-update", "phar", "github-releases"],
+    "homepage": "https://github.com/jeffersongoncalves/laravel-zero-self-update",
+    "license": "MIT",
+    "authors": [
+        { "name": "Jefferson Goncalves", "email": "jeffersongoncalves@users.noreply.github.com" }
+    ],
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.10",
+        "illuminate/console": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel-zero/framework": "^12.0",
+        "laravel/pint": "^1.25",
+        "mockery/mockery": "^1.6",
+        "pestphp/pest": "^3.8|^4.1"
+    },
+    "autoload": {
+        "psr-4": { "JeffersonGoncalves\\LaravelZero\\SelfUpdate\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "JeffersonGoncalves\\LaravelZero\\SelfUpdate\\Tests\\": "tests/" }
+    },
+    "scripts": {
+        "lint": "pint",
+        "test:lint": "pint --test",
+        "test:unit": "pest",
+        "test": ["@test:unit", "@test:lint"]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": { "pestphp/pest-plugin": true }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
