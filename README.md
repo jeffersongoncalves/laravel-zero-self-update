@@ -6,6 +6,8 @@
 
 # laravel-zero-self-update
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jeffersongoncalves)
+
 Reusable self-update service and base command for [Laravel Zero](https://laravel-zero.com) CLIs that are distributed as a single-file PHAR via GitHub Releases.
 
 Most Laravel Zero PHAR tools end up shipping the exact same `self-update` logic: read the current version, hit the GitHub "latest release" API, compare versions, download the `.phar` asset, back up the running PHAR and atomically swap it in. This package extracts that logic into one well-tested service (`PharUpdater`) plus an abstract `self-update` command base, so each CLI only has to declare its repository, asset name and version.
